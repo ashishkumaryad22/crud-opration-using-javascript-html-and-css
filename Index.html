@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>User Details.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 style="text-align: center;">User with Product Details. </h1>
+	<hr>
+	<div class="employee-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>User Name*</label><label class="validation-error hide " id="userNameValidationError">This field is required.</label>
+                <input type="text" name="userName" id="userName">
+            </div>
+            <div>
+                <label>Item Id</label>
+                <input type="number" name="itemId" id="itemId">
+            </div>
+            <div>
+                <label>Item Name</label>
+                <input type="text" name="itemName" id="itemName">
+            </div>
+            <div>
+                <label>Item Descripton</label><label class="validation-error hide" id="userNameValidationError">This field is required.</label>
+                <input type="text" name="itemDesc" id="itemDesc">
+            </div>
+            <div>
+                <label>Item Quantity</label>
+                <input type="number" name="itemQunt" id="itemQunt">
+            </div>
+            <div  class="">
+                <button class=" mbtn blue lf " type="Submit" name="Submit" value="Submit" id="sub"  >Submit</button>
+                <button class=" mbtn red rt" type="reset" name="Reset" value="Reset" id="rset"  >Reset</button>
+                
+            </div>
+        </form>
+	</div><br/>
+	<div class = "employees-table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Item Id</th>
+                    <th>Item Name</th>
+                    <th>Item Description</th>
+                    <th>Item Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
